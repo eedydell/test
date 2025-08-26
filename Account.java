@@ -7,8 +7,7 @@ public class Account {
 		//New comment for balance
 		private String name;
 		
-		public Account(String string, double balance) {
-			this("Unknown, balance");
+	
 		}
 		public Account(String string) {
 			
