@@ -1,22 +1,17 @@
-package ver1;
+package ver2;
 
 public class Account {
 
 	
 		private double balance;
+		//New comment for balance
 		private String name;
 		
-		public Account(double balance) {
+		public Account(String string, double balance) {
 			this("Unknown, balance");
 		}
-		public Account(String name, double balance) {
-			this.name = name;
-			this.balance = balance;
-		}
-
-		
 		public Account(String string) {
-			// TODO Auto-generated constructor stub
+			
 		}
 		public double getBalance() {
 			return balance;
@@ -48,7 +43,7 @@ public class Account {
 
 	
 		public static void main(String[] args) {
-		Account a1 = new Account(1000.0);
+		Account a1 = new Account(null, 0);
 		System.out.println("Balance=$" + a1.getBalance());
 		a1.deposit(500.0);
 		System.out.println("Balance=$" + a1.getBalance());
